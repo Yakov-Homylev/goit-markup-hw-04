@@ -5,6 +5,7 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --third-background-color: #2f303a;
+  --primary-icon-color: #afb1b8;
   --card-set-gap: 30px;
 }
 
@@ -139,15 +140,22 @@ ul {
 .contacts .link:focus,
 .contacts .link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contacts .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.contacts-icon {
+  margin-right: 10px;
+}
 /* Hero */
 
 .hero {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--third-background-color);
   text-align: center;
   padding-top: 200px;
@@ -197,6 +205,12 @@ ul {
   font-weight: 700;
   line-height: 1.14;
 }
+.feuteres-block-image {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background-color: var(--secondary-bacground-color);
+}
 .feuteres-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -235,8 +249,6 @@ ul {
   background-color: var(--secondary-bacground-color);
 }
 .team-section .section-title {
-  text-align: center;
-
   color: var(--secondary-text-color);
 
   font-weight: 700;
@@ -277,8 +289,60 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
+}
+.worker-social-links {
+  display: flex;
+  justify-content: center;
+}
+.worker-social {
+  fill: var(--primary-icon-color);
+}
+.worker-social-link {
+  padding: 12px;
+}
+.worker-social-link:not(:last-child) {
+  margin-right: 10px;
+}
+.worker-social-link:hover,
+.worker-social-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.worker-social:hover,
+.worker-social:focus {
+  fill: var(--primary-white-color);
+}
+/* Clients */
+.section-title.clients-title {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
+.clients-items {
+  display: flex;
+}
+.clients-item {
+  padding: 16px 32px;
+  border: 1px solid var(--primary-icon-color);
+  fill: var(--primary-icon-color);
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /* Footer */
 .footer-section {
   padding-top: 60px;
